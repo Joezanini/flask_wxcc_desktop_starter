@@ -1,4 +1,4 @@
-# Webex Contact Center REST Agent Desktop STARTER
+# Webex CC RESTful API Agent Desktop STARTER
 
 This repository contains a sample Flask application that demonstrates how to integrate with the Webex Contact Center REST API. The application allows agents to log in and log out of a Desktop Session, and handles OAuth authentication with Webex.
 
@@ -17,14 +17,7 @@ This repository contains a sample Flask application that demonstrates how to int
     cd webex-contact-center-integration
     ```
 
-2. **Create a virtual environment:**
-
-    ```sh
-    python3 -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. **Install the dependencies:**
+2. **Install the dependencies:**
 
     ```sh
     pip install -r requirements.txt
@@ -35,20 +28,32 @@ This repository contains a sample Flask application that demonstrates how to int
     ```sh
     pip install flask requests
     ```
+## Webex Contact Center Developer Sandbox or Account
+    you can request a WxCC Developer Sandbox [here](https://developer.webex-cx.com/sandbox).
+
+## Webex Contact Integration
+    you will need to register a Webex Contact Center integration in order to get
+    Client ID, Client Secret, Redirect, and optional Authorizaiton URL for OAuth 2.0 Flow.
+    Learn more [here](https://developer.webex-cx.com/documentation/integrations).
 
 ## Configuration
 
-**Set up environment variables:**
+1. **Set up variables on desktop.py:**
 
-    Create a `.env` file in the root directory of the project and add the following variables:
+    add valid values to the following variables:
 
-    ```env
+    ```
     CLIENT_ID=YourClientId
     CLIENT_SECRET=YourClientSecret
     REDIRECT_URI=http://0.0.0.0:10060/oauth
     AGENT_ID=YourAgentId
     TEAM_ID=YourTeamId
     DIAL_NUMBER=1001
+    ```
+
+2. **Add Auth URL on index.html:**
+    ```
+    <a href='Your Authorization url here'>
     ```
 
 ## Running the Application
