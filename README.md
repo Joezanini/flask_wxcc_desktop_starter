@@ -70,7 +70,8 @@ This repository contains a sample Flask application that demonstrates how to int
 
 ## Usage
 
-- **Authorize:** Click the "Grant" button on the main page to start the OAuth process and log in as an agent.
+- **Authorize:** Click the "Grant" button on the main page to start the OAuth process and log in as an agent. Please use a user with the roles of AGENT as the roles parameter in the body of the
+api call was hardcoded.
 - **Agent Login:** Click the "Login" button on the granted.html page to log in to a WxCC Desktop Session.
 - **Agent Logout:** Click the "Logout" button on the agent_loggedin.html page to log out of the WxCC Desktop Session.
 
