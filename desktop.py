@@ -23,11 +23,11 @@ app.secret_key = os.urandom(24)
 """
 Global Variables
 agentId : The agentId of the agent that is logged in. it can be gathered
-            from the control hub, or programmatically from a webhook when
+            from the control hub, or programmatically from a websocket when
             an agent logs in.
-    [login](https://developer.webex-cx.com/documentation/agents/v1/agent-login)
+    [Subscribe](https://developer.webex-cx.com/documentation/notification/v1/subscribe-notification)
 teamId : The teamId of the team that the agent is a member of. This can be
-            gathered from the control hub, or programmatically from a webhook
+            gathered from the control hub, or programmatically from a websocket
             when an agent logs in.
 dialNumber : The dialNumber of the agent that is logged in.
 
