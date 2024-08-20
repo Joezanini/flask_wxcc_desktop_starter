@@ -32,8 +32,9 @@ This repository contains a sample Flask application that demonstrates how to int
     you can request a WxCC Developer Sandbox [here](https://developer.webex-cx.com/sandbox).
 
 ## Webex Contact Integration
-    you will need to register a Webex Contact Center integration in order to get
-    Client ID, Client Secret, Redirect, and optional Authorizaiton URL for OAuth 2.0 Flow.
+    you will need to register a Webex Contact Center integration with cjp:user scope
+    in order to get Client ID, Client Secret, Redirect, and optional Authorizaiton URL
+    for OAuth 2.0 Flow.
     Learn more [here](https://developer.webex-cx.com/documentation/integrations).
 
 ## Configuration
